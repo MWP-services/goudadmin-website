@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Website bewerken | GoudAdmin</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/beheer/editor.css">
+</head>
+<body data-editor>
+  <header class="site-header"><div class="header-inner">
+    <a href="/" class="brand"><img class="brand-logo-wide" src="/assets/LOGO.svg" alt="GoudAdmin"></a>
+    <a href="/" target="_blank" rel="noopener">Website bekijken ↗</a>
+  </div></header>
+  <main class="container editor-main">
+    <h1>Je website bijwerken</h1>
+    <p>Pas je profielfoto en diensten aan. Bekijk het voorbeeld en publiceer wanneer je tevreden bent.</p>
+    <section id="login-panel" class="editor-panel" hidden>
+      <h2>Welkom terug</h2><p>Log in met het Microsoft-account waarvoor je toegang hebt gekregen.</p>
+      <a class="button button-primary" id="login-link" href="/.auth/login/aad">Inloggen met Microsoft</a>
+    </section>
+    <p id="status" role="status" aria-live="polite">Je gegevens worden geladen…</p>
+    <div id="editor" hidden>
+      <div class="editor-heading"><p id="account"></p><a id="logout" href="/.auth/logout">Uitloggen</a></div>
+      <form id="editor-form">
+        <fieldset id="fields">
+          <section class="editor-panel">
+            <h2>1. Profielfoto</h2>
+            <div class="photo-layout">
+              <img id="photo-preview" class="profile-photo" src="/assets/profielfoto.jpg" alt="Voorbeeld van je profielfoto">
+              <div><label for="photo">Nieuwe foto kiezen</label>
+                <input type="file" id="photo" accept="image/jpeg,image/png,image/webp" aria-describedby="photo-help">
+                <p id="photo-help">Kies een JPG-, PNG- of WebP-foto van maximaal 10 MB. Je foto wordt automatisch verkleind. In het voorbeeld zie je de uitsnede op de website.</p>
+              </div>
+            </div>
+          </section>
+          <section class="editor-panel"><h2>2. Dienstenkaartjes</h2><p>Elk kaartje heeft een titel, korte beschrijving en een toelichting. Alle velden zijn verplicht.</p><div id="service-fields"></div></section>
+        </fieldset>
+        <section class="editor-panel"><h2>3. Bekijk je wijzigingen</h2><p>Dit voorbeeld is alleen voor jou zichtbaar. Klik op een kaartje om de tekst te bekijken.</p>
+          <div id="preview" class="card-grid"></div>
+        </section>
+        <div class="editor-actions">
+          <span id="save-state">Geen wijzigingen</span>
+          <button id="reset" class="button" type="button" disabled>Wijzigingen herstellen</button>
+          <button id="publish" class="button button-primary" type="submit" disabled>Publiceren op website</button>
+        </div>
+      </form>
+    </div>
+    <noscript>Schakel JavaScript in om je website te bewerken.</noscript>
+  </main>
+  <script src="/beheer/editor.js" type="module"></script>
+</body>
+</html>

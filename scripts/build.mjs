@@ -13,5 +13,6 @@ if (!existsSync(source)) {
 rmSync(output, { recursive: true, force: true });
 mkdirSync(output, { recursive: true });
 cpSync(source, output, { recursive: true });
+cpSync(resolve(source, 'content.json'), resolve(root, 'api/default-content.json'));
 
 console.log("Build complete: dist");

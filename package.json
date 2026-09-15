@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "test": "node --test tests/content.test.mjs",
     "dev": "vite src",
     "build": "node scripts/build.mjs",
     "preview": "vite preview --host 127.0.0.1"

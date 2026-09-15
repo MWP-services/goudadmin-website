@@ -1,0 +1,25 @@
+{
+  "photo": "/assets/profielfoto.jpg",
+  "services": [
+    {
+      "title": "Administratieve ondersteuning",
+      "description": "Hulp bij terugkerende administratieve taken, zodat je werk overzichtelijk blijft.",
+      "details": "Bekend met ZorgAdmin en administratieve processen binnen zorg- en hulpverleningspraktijken."
+    },
+    {
+      "title": "Structuur aanbrengen in administratie",
+      "description": "Praktische ordening in processen, mappen en werkwijzen die in de praktijk werkt.",
+      "details": "Samen brengen we vaste lijnen aan, zodat taken makkelijker terug te vinden en vol te houden zijn."
+    },
+    {
+      "title": "Overzicht cre?ren",
+      "description": "Meer grip op werkzaamheden en documenten, met heldere prioriteiten en afspraken.",
+      "details": "Geschikt wanneer je administratie is gegroeid en je weer helder wilt zien wat aandacht nodig heeft."
+    },
+    {
+      "title": "Ondersteuning voor zorgpraktijken",
+      "description": "Ondersteuning die aansluit bij zorg- en hulpverleningspraktijken en hun dagelijkse realiteit.",
+      "details": "Met gevoel voor privacy, afspraken, dossiers en het ritme van een praktijk."
+    }
+  ]
+}

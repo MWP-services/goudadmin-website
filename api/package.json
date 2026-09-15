@@ -1,0 +1,14 @@
+{
+  "name": "goudadmin-content-api",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0",
+    "@azure/storage-blob": "^12.27.0",
+    "goudadmin-website": "file:.."
+  }
+}
