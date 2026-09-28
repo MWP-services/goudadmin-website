@@ -45,7 +45,7 @@ wijzigen. Er zijn geen technische handelingen nodig voor de klant.
 3. Deploy de repository met de bijgewerkte GitHub Actions-workflow. Deze bouwt
    `src` naar `dist` en deployt de API uit `api`. De Node-runtime is `node:20`.
 4. Nodig het Microsoft-account van de klant uit via **Role management** in de
-   Static Web App, met de aangepaste rol **content-editor** en provider Microsoft
+   Static Web App, met de aangepaste rol **content_editor** en provider Microsoft
    Entra ID. Laat de klant de uitnodiging accepteren. Alleen inloggen is niet
    voldoende om te mogen publiceren.
 5. Controleer op de gedeployde site: aanmelden als klant, een tekst/foto publiceren,
@@ -69,7 +69,7 @@ eerste publicatie. Deze defaults wijzigen geen al gepubliceerde blob.
 Met `npm run dev` is `/beheer/` een expliciet lokaal voorbeeld: foto kiezen,
 teksten bewerken en herstellen werken; publiceren is uitgeschakeld en wijzigingen
 worden niet bewaard. Dit is geen lokale login of omzeiling van de API-beveiliging.
-De API controleert altijd de door Azure aangeleverde `content-editor`-rol.
+De API controleert altijd de door Azure aangeleverde `content_editor`-rol.
 Host deze API uitsluitend als beheerde Static Web Apps API, zodat Azure de
 identiteitsheader controleert; stel de Function niet los openbaar beschikbaar.
 

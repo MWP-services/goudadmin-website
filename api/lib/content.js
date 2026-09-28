@@ -3,7 +3,7 @@ export const MAX_BODY = 1_500_000;
 export function isEditor(encoded) {
   try {
     const principal = JSON.parse(Buffer.from(encoded, 'base64').toString('utf8'));
-    return Boolean(principal.userId && principal.userRoles?.includes('content-editor'));
+    return Boolean(principal.userId && principal.userRoles?.includes('content_editor'));
   } catch { return false; }
 }
 

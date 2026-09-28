@@ -6,7 +6,7 @@ import { createHandler, validateContent, isEditor } from '../api/lib/content.js'
 const initial = JSON.parse(readFileSync(new URL('../src/content.json', import.meta.url)));
 const principal = roles => Buffer.from(JSON.stringify({ userId: 'test-user', userRoles: roles })).toString('base64');
 const request = (content = initial, headers = {}) => new Request('https://goudadmin.nl/api/content', {
-  method: 'PUT', headers: { 'content-type': 'application/json', 'x-goudadmin-editor': '1', 'if-match': '"1"', 'x-ms-client-principal': principal(['content-editor']), ...headers }, body: JSON.stringify(content)
+  method: 'PUT', headers: { 'content-type': 'application/json', 'x-goudadmin-editor': '1', 'if-match': '"1"', 'x-ms-client-principal': principal(['content_editor']), ...headers }, body: JSON.stringify(content)
 });
 
 test('only the assigned editor can write, including direct API requests', async () => {
@@ -14,7 +14,7 @@ test('only the assigned editor can write, including direct API requests', async 
   for (const value of ['', 'invalid', principal(['anonymous']), principal(['authenticated'])]) {
     assert.equal((await handler(request(initial, { 'x-ms-client-principal': value }))).status, 403);
   }
-  assert.equal(isEditor(principal(['content-editor'])), true);
+  assert.equal(isEditor(principal(['content_editor'])), true);
 });
 
 test('content is limited to the photo and exactly four fixed service cards', () => {
@@ -57,6 +57,6 @@ test('malformed, oversized, or non-editor requests cannot write', async () => {
 
 test('Azure configuration guards publishing and shipped defaults match the website', () => {
   const config = JSON.parse(readFileSync(new URL('../src/staticwebapp.config.json', import.meta.url)));
-  assert.deepEqual(config.routes.find(route => route.route === '/api/content').allowedRoles, ['content-editor']);
+  assert.deepEqual(config.routes.find(route => route.route === '/api/content').allowedRoles, ['content_editor']);
   assert.deepEqual(JSON.parse(readFileSync(new URL('../api/default-content.json', import.meta.url))), initial);
 });

@@ -102,7 +102,7 @@ async function start() {
       if (!response.ok) throw new Error('Inloggen is momenteel niet beschikbaar. Probeer het later opnieuw.');
       return response.json();
     });
-    if (!auth.clientPrincipal?.userRoles?.includes('content-editor')) {
+    if (!auth.clientPrincipal?.userRoles?.includes('content_editor')) {
       $('#login-panel').hidden = false;
       status(auth.clientPrincipal ? 'Dit account heeft geen bewerktoegang. Neem contact op met je websitebeheerder.' : 'Log in om je foto en diensten bij te werken.');
       if (auth.clientPrincipal) {

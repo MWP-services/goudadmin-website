@@ -3,7 +3,7 @@
     {
       "route": "/api/content",
       "methods": ["PUT"],
-      "allowedRoles": ["content-editor"]
+      "allowedRoles": ["content_editor"]
     },
     {
       "route": "/beheer",
