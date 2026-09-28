@@ -3,23 +3,23 @@
   "services": [
     {
       "title": "Administratieve ondersteuning",
-      "description": "Hulp bij terugkerende administratieve taken, zodat je werk overzichtelijk blijft.",
-      "details": "Bekend met ZorgAdmin en administratieve processen binnen zorg- en hulpverleningspraktijken."
+      "description": "Ik help je met terugkerende administratieve taken en het bijhouden van je documenten.",
+      "details": "Ik ben bekend met ZorgAdmin en de administratie van zorg- en hulpverleningspraktijken. Samen spreken we af welke werkzaamheden ik van je overneem."
     },
     {
-      "title": "Structuur aanbrengen in administratie",
-      "description": "Praktische ordening in processen, mappen en werkwijzen die in de praktijk werkt.",
-      "details": "Samen brengen we vaste lijnen aan, zodat taken makkelijker terug te vinden en vol te houden zijn."
+      "title": "Structuur in je administratie",
+      "description": "Een logische indeling van je mappen en vaste afspraken over hoe je de administratie bijhoudt.",
+      "details": "Samen ordenen we je documenten en richten we een werkwijze in die je ook op drukke dagen kunt volgen."
     },
     {
-      "title": "Overzicht cre?ren",
-      "description": "Meer grip op werkzaamheden en documenten, met heldere prioriteiten en afspraken.",
-      "details": "Geschikt wanneer je administratie is gegroeid en je weer helder wilt zien wat aandacht nodig heeft."
+      "title": "Overzicht in je werkzaamheden",
+      "description": "We zetten op een rij wat er nog moet gebeuren en wat als eerste aandacht nodig heeft.",
+      "details": "Is je administratie blijven liggen of gegroeid? Ik help je uitzoeken wat is afgehandeld, wat ontbreekt en welke taken nog openstaan."
     },
     {
       "title": "Ondersteuning voor zorgpraktijken",
-      "description": "Ondersteuning die aansluit bij zorg- en hulpverleningspraktijken en hun dagelijkse realiteit.",
-      "details": "Met gevoel voor privacy, afspraken, dossiers en het ritme van een praktijk."
+      "description": "Administratieve hulp die past bij de dagelijkse werkzaamheden in jouw praktijk.",
+      "details": "Ik houd rekening met je afspraken en de vertrouwelijkheid van dossiers. We stemmen de ondersteuning af op wat jij nodig hebt."
     }
   ]
 }
